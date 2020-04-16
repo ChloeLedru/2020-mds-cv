@@ -7,60 +7,92 @@
 	  	<link rel="stylesheet" type="text/css" href="CSS.css"/>
 	  	 <style>
 			
-			body {
-				margin: 0;
-				padding: 0;
-				background-color: #c6b59b;
-				color: black;
-				font-family: 'Montserrat', sans-serif; 
-
-			
-			}
-
-			#titre {
-				background-color: #39442f;
-				margin: 0.2em;
-				color:#c6b59b;
+			body 
+			.wrapper {
+ 			display: grid;
+ 			grid-template-columns: 40em ;
+ 			grid-template-rows: 40em 1fr 1fr 1fr 1fr 1fr 1fr;
+ 			grid-gap: 3rem;
+ 			margin: 5;
+			padding: 5;
+			background-color: #c6b59b;
+			color: black;
+			font-family: 'Montserrat', sans-serif; 
 
 			}
 
-			#photo {
-				text-align: center;
-				margin-top: 1em;
+
+		.box {
+		  background-color: #c6b59b;
+		  color: black;
+		  border-radius: 0px;
+		  /*padding: 20px;*/
+		  font-size: 100%;
+
+		}
+
+
+		.titre {
+					grid-column: 1 / 2;
+	       			grid-row: 1 / 2;
+					background-color: #39442f;
+					margin: 0.2em;
+
 			}
 
-			#entete {
-				text-align: center;
+
+		.entete {
+			grid-column: 1 / 2;
+	     	grid-row: 2 / 3;
 				
-			}
+		}
+
+		.àpropos {
+	       grid-column: 1 / 2;
+	       grid-row: 3 / 4;
+	      
+	    }
+
+	    .experiencesprofessionnelles {
+	        grid-column: 1 / 2;
+	        grid-row: 4 / 5;
+	    }
+
+	    .formations {
+	        grid-column: 1 / 2;
+	        grid-row: 5 / 6;
+	    }
+
+		.compétences {
+	        grid-column: 1 / 2;
+	       	grid-row: 7 / 8;
+	    }
+	    
+
+		
+			
    		 
-   		 	h2{
-        	color : #39442f;
-        	text-align: center;
-    	} 
-
-    		hr{
-    			color: #39442f;
-    			} 
-
-    		#paragraphe {
-    				text-align: center;
-
-    	} 
-
-
   		</style>
 	</head>
   	<body> 
-  	<div id="entete">
-  		<h1 id="titre">Chloé Ledru</h1>
-		<div id="citation">
+  	
+		
+	
+
+	<div class="wrapper">
+
+		<div class="box titre"> 
+	<h1 class="titre">Chloé Ledru</h1>
+</div>
+
+		<div class="box entete"> 
+			<div class="citation">
 			Étudiante et apprentie en Webmarketing & Social Media
 		</div>
 
- 		<div id="photo">
+ 		<div class="photo">
  		<a href="CL.png" target="blank">
- 			<img id="photo" style="width:180px ;" src="CL.png" alt="Photo">
+ 			<img id="photo" style="width:180px ;" src="CL.png" alt="1">
 		</a>
 	</div>
 
@@ -68,18 +100,17 @@
 			<a href="mailto:chloeledru@outlook.fr">
 				chloeledru@outlook.fr
 			</a>
-		</div>
-		<div>
+		
 		07 83 85 75 27
 		</div>
-	</div>
-		<div id="paragraphe">
 
-		<h2> À propos </h2>
+
+
+	  <div class="box àpropos">
+	  	<h2> À propos </h2>
 		<hr>
 		<ul>
 			<li style="list-style: none">
-			 	<p align="justify">
 			 	<div> 
 			 		23 ans - 15/06/1996
 			 	</div>
@@ -93,11 +124,14 @@
 			 	<div> 
 			 		Voyage - Cuisine - Fitness 
 			 	</div>
-			 </p>
 			</li>
 		</ul>
+	  </div>
 
 
+
+	  <div class="box expériencesprofessionnelles">
+	  	
 		<h2> Expériences professionnelles </h2>
 
 		<hr>
@@ -169,7 +203,10 @@
 			</li>
 		</ul>
 
-		<h2> Formations </h2>
+
+			
+	  <div class="box formations">
+	  	<h2> Formations </h2>
 
 		<hr> 
 
@@ -214,7 +251,12 @@
 			 	</div>
 			</li>
 		</ul>
+	  </div>
 
+
+
+
+		<div class="box compétences"> 
 		<h2> Compétences </h2>
 
 		<hr>
@@ -278,9 +320,11 @@
 			</li>
 
 		</ul>
+	  
+	</div>
 		</div>
+	 
 
 	</body>
 </html>
 
-<!-- Relectrice : Loélia -->
