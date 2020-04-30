@@ -10,8 +10,8 @@
 			body 
 			.wrapper {
  			display: grid;
- 			grid-template-columns: 40em ;
- 			grid-template-rows: 40em 1fr 1fr 1fr 1fr 1fr 1fr;
+ 			grid-template-columns: 1fr ; /*DV : modifié;*/
+ 			grid-template-rows: 150px 1fr 1fr 1fr 1fr 1fr 1fr; /*DV : Modifié la première valeur, qui est la ligne de ton entête. 40em, c'était bcp trop. */
  			grid-gap: 3rem;
  			margin: 5;
 			padding: 5;
@@ -63,7 +63,7 @@
 	        grid-row: 5 / 6;
 	    }
 
-		.compétences {
+		.competences { /*DV : Ne jamais utiliser d'accents dans les noms de classes.*/
 	        grid-column: 1 / 2;
 	       	grid-row: 7 / 8;
 	    }
@@ -82,8 +82,8 @@
 	<div class="wrapper">
 
 		<div class="box titre"> 
-	<h1 class="titre">Chloé Ledru</h1>
-</div>
+			<h1 class="titre">Chloé Ledru</h1>
+		</div>
 
 		<div class="box entete"> 
 			<div class="citation">
@@ -94,7 +94,7 @@
  		<a href="CL.png" target="blank">
  			<img id="photo" style="width:180px ;" src="CL.png" alt="1">
 		</a>
-	</div>
+		</div>
 
 		<div>
 			<a href="mailto:chloeledru@outlook.fr">
@@ -256,7 +256,7 @@
 
 
 
-		<div class="box compétences"> 
+		<div class="box competences"> 
 		<h2> Compétences </h2>
 
 		<hr>
