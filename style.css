@@ -11,8 +11,128 @@
 body {
 	font-family:"MontserratRegular";
 	font-size: 18px;
-	color: #000;
+	color: #221c89;
 	max-width: 100%;
 	margin: 100px;
-	line-height: 2;
+	line-height: 1;
 }
+
+
+ li { 
+ 	margin: 0; 
+ 	padding: 0;
+ 	 list-style-type: none;
+ }
+
+
+h1 {
+	font-family: "MontserratBold";
+	font-size: 3em;
+	color: #fbd2ae
+}
+
+h2 {
+	font-family: "MontserratBold";
+	font-size: 3em;
+	color: #221c89 
+}
+
+.titre {
+	text-align: center;
+}
+
+.wrapper {
+ 			display: grid;
+ 			grid-template-columns: 150px 1fr 1fr 1fr; 
+ 			grid-template-rows: 150px 1fr 1fr 1fr 1fr; 
+ 			grid-gap: 3rem;
+}
+
+.titre {
+		grid-column: 1 / 4;
+		grid-row: 1 / 2;
+}
+
+.photo {
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+}
+
+.titre1 {
+		grid-column: 2 / 3;
+		grid-row: 2 / 3;
+}
+
+.contact {
+		grid-column: 2 / 3;
+		grid-row: 2 / 3;
+}
+
+.titre2 {
+		grid-column: 3 / 4;
+		grid-row: 2 / 3;
+}
+
+.apropos {
+		grid-column: 3 / 4;
+		grid-row: 2 / 3;
+}
+
+.titre3 {
+		grid-column: 1 / 4;
+		grid-row: 3 / 4;
+}
+
+.date {
+		grid-column: 1 / 2;
+		grid-row: 3 / 4;
+}
+
+.poste {
+		grid-column: 2 / 3;
+		grid-row: 3 / 4;
+}
+
+.entreprise {
+		grid-column: 3 / 4;
+		grid-row: 3 / 4;
+}
+
+.titre4  {
+		grid-column: 1 / 2;
+		grid-row: 4 / 5;
+}
+
+
+.date2  {
+		grid-column: 1 / 2;
+		grid-row: 4 / 5;
+}
+
+.diplome  {
+		grid-column: 2 / 3;
+		grid-row: 4 / 5;
+}
+
+.etablissement  {
+		grid-column: 3 / 4;
+		grid-row: 4 / 5;
+}
+
+
+.langue  {
+		grid-column: 1 / 2;
+		grid-row: 5 / 6;
+}
+
+.logiciel  {
+		grid-column: 2 / 3;
+		grid-row: 5 / 6;
+}
+
+.mission  {
+		grid-column: 3 / 4;
+		grid-row: 5 / 6;
+}
+
+
