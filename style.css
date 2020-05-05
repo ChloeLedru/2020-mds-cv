@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "MontserratRegular"; 
+    src: url("fonts/Montserrat-Regular.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "MontserratBold"; 
+    src: url("fonts/Montserrat-Bold.otf") format("truetype");
+}
+
+body {
+	font-family:"MontserratRegular";
+	font-size: 18px;
+	color: #000;
+	max-width: 100%;
+	margin: 100px;
+	line-height: 2;
+}
