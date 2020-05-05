@@ -18,7 +18,7 @@ body {
 }
 
 
- li { 
+li { 
  	margin: 0; 
  	padding: 0;
  	 list-style-type: none;
@@ -35,49 +35,53 @@ h2 {
 	font-family: "MontserratBold";
 	font-size: 1.5em;
 	color: #221c89 
-	text-align: center;
 }
 
-.titre {
-	text-align: center;
-}
 
 .wrapper {
  			display: grid;
  			grid-template-columns: 150px 1fr 1fr; 
  			grid-template-rows: 150px 1fr 1fr 1fr 1fr; 
- 			grid-gap: 3rem;
+ 			grid-row-gap: 1rem;
+ 			grid-column-gap: 5rem;
  			grid-auto-flow: column;
 }
 
 .titre {
 		grid-column: 1 / 4;
 		grid-row: 1 / 2;
+		text-align: center;
+		
 }
 
 .photo {
 		grid-column: 1 / 2;
 		grid-row: 2 / 3;
+		align-items: left;
 }
 
 .titre1 {
 		grid-column: 2 / 3;
 		grid-row: 2 / 3;
+		
 }
 
 .contact {
 		grid-column: 2 / 3;
 		grid-row: 2 / 3;
+		text-align: justify;
 }
 
 .titre2 {
 		grid-column: 3 / 4;
 		grid-row: 2 / 3;
+		
 }
 
 .apropos {
 		grid-column: 3 / 4;
 		grid-row: 2 / 3;
+		text-align: justify;
 }
 
 .titre3 {
