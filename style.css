@@ -35,6 +35,7 @@ h2 {
 	font-family: "MontserratBold";
 	font-size: 1.5em;
 	color: #221c89 
+	text-align: center;
 }
 
 .titre {
@@ -43,9 +44,10 @@ h2 {
 
 .wrapper {
  			display: grid;
- 			grid-template-columns: 150px 1fr 1fr 1fr; 
+ 			grid-template-columns: 150px 1fr 1fr; 
  			grid-template-rows: 150px 1fr 1fr 1fr 1fr; 
  			grid-gap: 3rem;
+ 			grid-auto-flow: column;
 }
 
 .titre {
